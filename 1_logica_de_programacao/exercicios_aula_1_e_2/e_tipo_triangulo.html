@@ -8,19 +8,20 @@
 <body>
     <script>
         // Solicitar a largura dos lados do triângulo
-        lado_direito = float(input('Qual a largura do lado direito do triângulo: '))
-        lado_inferior = float(input('Qual a largura do lado inferior do triângulo: '))
-        lado_esquerdo = float(input('Qual a largura do lado esquerdo do triângulo: '))
+        lado_direito = parseFloat(prompt('Qual a largura do lado direito do triângulo: '))
+        lado_inferior = parseFloat(prompt('Qual a largura do lado inferior do triângulo: '))
+        lado_esquerdo = parseFloat(prompt('Qual a largura do lado esquerdo do triângulo: '))
 
         // Verificar o tipo do triângulo
-        if (lado_direito && lado_inferior && lado_inferior && lado_esquerdo)
+        if (lado_direito == lado_inferior && lado_inferior == lado_esquerdo) {
             tipo = "Equilátero"
-        if (lado_direito && lado_inferior || lado_direito && lado_esquerdo || lado_inferior && lado_esquerdo)
+        } else if (lado_direito != lado_esquerdo && lado_direito != lado_inferior) {
+            tipo = "Escaleno"        
+        } else {
+            tipo = "Isóceles"
+        }
             
-        
-    
-        
-         
+
 
             // Exibição do tipo de triângulo
 
