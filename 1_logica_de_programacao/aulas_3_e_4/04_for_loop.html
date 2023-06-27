@@ -8,51 +8,32 @@
 </head>
 <body>
     <script>
-        //  Váriavel ; Condição ; Increcemento 
-        for (let i = 1; i <= 10; i++) {
-            if (i % 2 === 0) {
-              console.log(i)
-            }
+        // variavel - condicao - incremento
+        for (let i = 0; i <=10; i++) {
+            if (1 % 2 == 0 ) {
+                alert(1 + ' é par')
+            } else {
+                alert(i + ' é impar')
+            } 
         }
 
 
+        let lista_de_numeros = [1, 24, 35, 44, 59,]
+        let soma_dos_pares = 0
+        let soma_dos_impares = 0
+        // Loop for para percorrer todos os elementos da lista
+        // E calcular os elementos pares
 
-        // Array (Lista) de números
-        // Posições:   0, 1, 2, 3, 4
-        let numeros_array = [10, 5, 8, 3, 2]
-
-        // Variável para armazenar o primeiro número na primeira posição (Posição zero)
-        let maior_numero = numeros_array[0]
-
-        // Iteração pelos elementos do array
-        for (let i = 1; i < numeros_array.length; i++) {
-            // Verifica se o elemento atual é maior que o maior número atual
-            if (numeros_array[i] > maior_numero) {
-                // Atualiza o maior número
-                maior_numero = numeros_array[i]
+        for (let i = 0; i < lista_de_numeros.length; i++) {
+            if (lista_de_numeros[i] % 2 == 0) {
+                soma_dos_pares = soma_dos_pares + lista_de_numeros[i] 
+            } else {
+                soma_dos_impares = soma_dos_impares + lista_de_numeros[i]
             }
         }
+        console.log('Impares ' + soma_dos_pares)
+        console.log('Pares ' + soma_dos_impares)
 
-        // Imprime o maior número encontrado
-        console.log('O maior número é: ', maior_numero)
-
-
-
-        
-        let numeros_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] // Array de números
-        let soma_pares = 0 // Variável para armazenar a soma dos números pares
-
-        // Loop for para percorrer todos os elementos do array
-        for (let i = 0; i < numeros_list.length; i++) {
-            // Verifica se o número é par usando o operador %
-            if (numeros_list[i] % 2 === 0) {
-                // Se o número for par, adiciona-o à variável soma_pares
-                soma_pares += numeros_list[i]
-            }
-        }
-
-        // Exibe a soma dos números pares
-        console.log('A soma dos números pares é: ', soma_pares)
     </script>
 </body>
 </html>

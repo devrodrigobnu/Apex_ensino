@@ -14,16 +14,16 @@
         let numero_2 = parseFloat(prompt('Digite o segundo número: '))
         let numero_3 = parseFloat(prompt('Digite o terceiro número: '))
 
-        var menorNumero = numero_1;
+        var menorNumero
 
-        if (numero_2 < menorNumero) {
-            menor_2 = numeroNumero;
+        if (numero_1 < numero_2 && numero_1 < numero_3) {
+            menorNumero = numero_1;
+        } else if (numero_2 < numero_1 && numero_2 < numero_3) {
+            menorNumero = numero_2;
+        } else {
+            menorNumero = numero_3;
         }
-
-        if (numero_3 < menorNumero) {
-            menorNumero = numero3;
-        }
-
+        // Resultado 
         alert('O menor número é: '+ menorNumero)
 
     </script>
