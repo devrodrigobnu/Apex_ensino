@@ -7,26 +7,31 @@
 </head>
 <body>
     <script>
-        // Solicitar a largura dos lados do triângulo
-        lado_direito = float(input('Qual a largura do lado direito do triângulo: '))
-        lado_inferior = float(input('Qual a largura do lado inferior do triângulo: '))
-        lado_esquerdo = float(input('Qual a largura do lado esquerdo do triângulo: '))
+        // E - O usuário deverá informar a largura de cada lado de um triângulo, peça as
+        // três larguras (direito, inferior e esquerdo) e verifique o tipo de triângulo. Os
+        // tipos e triângulos são:
+        // Tipo Especificação:
+        // Isósceles Dois lados iguais e um diferente
+        // Escaleno Três lados diferentes
+        // Equilátero Três lados iguai        
 
-        // Verificar o tipo do triângulo
-        if (lado_direito && lado_inferior && lado_inferior && lado_esquerdo)
-            tipo = "Equilátero"
-        if (lado_direito && lado_inferior || lado_direito && lado_esquerdo || lado_inferior && lado_esquerdo)
-            tipo = "Escaleno"
-        
-    
-        
-         
+        let mensagem = ''  // string
 
-            // Exibição do tipo de triângulo
+        // Solicitando as larguras dos lados do triângulo ao usuário
+        let direita = parseFloat(prompt('Digite a largura do lado direito do triângulo:'))
+        let inferior = parseFloat(prompt('Digite a largura do lado inferior do triângulo:'))
+        let esquerda = parseFloat(prompt('Digite a largura do lado esquerdo do triângulo:'))
 
-            console.log('O triangulo é', tipo)
+        // Verificando o tipo de triângulo
+        if (direita === inferior && inferior === esquerda) {
+            mensagem = 'Triângulo Equilátero'
+        } else if (direita !== inferior && inferior !== esquerda && direita !== esquerda) {
+            mensagem = 'Triângulo Escaleno'
+        } else {
+            mensagem = 'Triângulo Isósceles'
+        }
 
-
+        console.info(mensagem)   // Informando tipo do triângulo
     </script>
 </body>
 </html>
