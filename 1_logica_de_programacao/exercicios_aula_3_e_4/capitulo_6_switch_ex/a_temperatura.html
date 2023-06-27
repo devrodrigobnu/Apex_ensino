@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //O usuário informa uma temperatura, em seguida poderá selecionar o tipo de
+        //conversão (Celsius e Fahrenheit).
+
+        // Ler os dados
+        let = temperatura = parseInt(prompt('Informe uma temperatura: '))
+        let = tipo_conversao = prompt('Informe o tipo de conversão: ')
+        
+        tipo_conversao = tipo_conversao.toLowerCase()
+
+        // Variavel para o resultado
+        let resultado = 0.0
+
+
+        // if para verificar tipo de conversão
+        if (tipo_conversao == 'celsius') {
+            resultado = (temperatura - 32) * (5 / 9)
+            resultado = resultado.toFixed(2)
+            
+        } else if (tipo_conversao == 'fahrenheit') {
+            resultado = (temperatura * 9) / (5 + 32)
+            resultado = temperatura.toFixed(2)
+        } else {
+            alert('Dados inválidos')
+            
+        }
+
+        alert('O resultado da conversao é ' + resultado + ' graus ' + tipo_conversao + '.')
+        // Mostrar a variavel com resultado da conversão
+
+
+
+
+    </script>
+</body>
+</html>
