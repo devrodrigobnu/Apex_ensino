@@ -26,28 +26,28 @@
 
     let resultado;
 
-switch (tipo_conversao) {
-  case 1:
-    tipo_conversao = "Real para dólar: $"
-    resultado = valor / 5.25;
-    break;
-  case 2:
-    tipo_conversao = "Dólar para real: R$"
-    resultado = valor * 5.25;
-    break;
-  case 3:
-    tipo_conversao = "Real para euro: €"
-    resultado = valor / 6.13;
-    break;
-  case 4:
-    tipo_conversao = "Euro para real: R$"
-    resultado = valor * 6.13
-    break;
-  default:
-    tipo_conversao = 'Input inválido';
-}
+    switch (tipo_conversao) {
+      case 1:
+        tipo_conversao = "Real para dólar: $"
+        resultado = valor / 5.25;
+        break;
+      case 2:
+        tipo_conversao = "Dólar para real: R$"
+        resultado = valor * 5.25;
+        break;
+      case 3:
+        tipo_conversao = "Real para euro: €"
+        resultado = valor / 6.13;
+        break;
+      case 4:
+        tipo_conversao = "Euro para real: R$"
+        resultado = valor * 6.13
+        break;
+      default:
+        tipo_conversao = 'Input inválido';
+    }
 
-alert('Resultado da conversão: ' + tipo_conversao + resultado.toFixed(2));
+    alert('Resultado da conversão: ' + tipo_conversao + resultado.toFixed(2));
 
         
         
