@@ -11,9 +11,36 @@
 // d - Crie um sistema de votação para três candidatos. O eleitor poderá selecionar
 // um dos três nomes, em seguida será contabilizado o voto para o candidato.
 
+    // 1 - Definir Candidatos
+    let candidato_1 =  0
+    let candidato_2 =  0
+    let candidato_3 =  0
+    var voto = 0
+    let opcoes = 'Informe o seu voto: '
+    opcoes += '\n1 para votar no Lula'
+    opcoes += '\n2 para votar no Bolsonaro'
+    opcoes += '\n3 para votar no Marina da Silva'
+    
+    while(voto != 4) {
+        voto = prompt(opcoes)
 
+        // 3 - Verificar o candidato selecionado e incrementar o número de votos correspondente
+        if (voto == 1) {
+            candidato_1++
+        } else if (voto == 2) {
+            candidato_2++
+        } else if (voto == 3) {
+            candidato_3++
+        } else if (voto != 4){
+            alert('Informe somente números de 1 a 3! ')
+        }
+    }
 
+    let msg = 'O candidato 1 obteve ' + candidato_1 + ' votos '
+    msg += '\nO candidato 2 obteve ' + candidato_2 + ' votos '
+    msg += '\nO candidato 3 obteve ' + candidato_3 + ' votos ' 
 
+    alert(msg)
 
     </script>    
 

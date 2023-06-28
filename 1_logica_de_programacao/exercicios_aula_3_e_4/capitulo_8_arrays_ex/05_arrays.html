@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+    // // Trabalhando com listas   // 0     // 1     // 2      // 3   // 4
+        let lista_de_dados = ['Banana', 'Maça', 'Abacaxi', 'Uva', 'Pêra']
+        
+        
+    // // Buscando tamanho da lista
+        let quantidade = lista_de_dados.length // lenght = quantidade
+            alert(quantidade)
+
+    // // Mostrar todos os itens da lista
+        for (let i = 0; i < lista_de_dados.length; i++) {
+            alert(i + ' Item = ' + lista_de_dados[i])
+        }
+
+    // // Substituir um valor na lista 
+        lista_de_dados[1] = 'Jabuticaba'
+            alert(lista_de_dados)
+
+
+    // Loop for para verificar quais numero de 1 a 20
+    // são impares ou pares
+        let lista_de_numero = [1, 283, 848, 232, 938, 6999, 7321, 8421, 942, 1032]
+        let soma_dos_pares = 0
+        let soma_dos_impares = 0
+        for (let i = 0; i < lista_de_numero.length; i++) {
+            if(lista_de_numero[i] % 2 == 0 ) {
+                soma_dos_pares++
+                alert(lista_de_numero[i] + ' numero é par! ')
+            } else {
+                soma_dos_impares++
+                alert(lista_de_numero[i] + ' numero é ímpar! ')
+            }
+        }
+
+        alert('Quantidade de pares ' + soma_dos_pares)
+        alert('Quantidade de ímpares ' + soma_dos_impares)
+
+        // Percorer lista ate achar impar
+        let lista_numero = [4, 6, 16, 24, 15, 28]
+
+        for (let i = 0; i < lista_numero.length; i++) {
+
+            if (lista_numero[1] % 2 != 0) {
+                alert(lista_numero[i] + ' é impar ')
+                break
+            } else {
+                alert(lista_numero[i] + ' é par')
+            }
+        }
+
+        // Inversão (Loop invertido) com lista dinamica
+        let lista = [1, 2 ,3, 4, 'python', 'javascript', true, 7, false, 25.0 ]
+
+        for (let i = 9; i >= 0; i--) {
+            alert('O item ' + lista[i] + ' está na posição ' + i + ' e é do tipo ' + typeof lista[i])
+        }
+
+    </script>
+</body>
+</html>
