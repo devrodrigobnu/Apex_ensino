@@ -7,21 +7,57 @@
 </head>
 <body>
     <script>
-    // b - Crie um conversor de moedas. Será informado o valor e as conversões:
+    // Crie um conversor de moedas. Será informado o valor e as conversões:
     // Real para Dólar: real / 5.25
     // Dólar para Real: dolar * 5.25
     // Real para Euro: real / 6.13
     // Euro para Real: euro * 6.13
     // Usar SWITCH
-
-
+    
     // Ler as informações
-    // 1 - 0 TIPO DE CONVERSÃO (nós temos que mostrar os tipos)
-
+    // TIPO DE CONVERSÃO (nós temos que mostrar os tipos)
     // Usar o switch para selecionar a opção
     // Variável para o resultado da conversão
     
     // Após o switch, nós vamos mostrar o resultado da conversão escolhida
+
+    let valor = parseFloat(prompt("Valor a ser convertido: "));
+    let tipo_conversao = parseInt(prompt('Informe o código de conversão: \n1- Real para dólar \n2- Dólar para real \n3 - Real para Euro \n4 - Euro para Real'));
+
+    let resultado;
+
+switch (tipo_conversao) {
+  case 1:
+    tipo_conversao = "Real para dólar: $"
+    resultado = valor / 5.25;
+    break;
+  case 2:
+    tipo_conversao = "Dólar para real: R$"
+    resultado = valor * 5.25;
+    break;
+  case 3:
+    tipo_conversao = "Real para euro: €"
+    resultado = valor / 6.13;
+    break;
+  case 4:
+    tipo_conversao = "Euro para real: R$"
+    resultado = valor * 6.13
+    break;
+  default:
+    tipo_conversao = 'Input inválido';
+}
+
+alert('Resultado da conversão: ' + tipo_conversao + resultado.toFixed(2));
+
+        
+        
+        
+   
+        
+
+
+
+
         
     </script>
 </body>

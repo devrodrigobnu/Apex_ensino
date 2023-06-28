@@ -16,9 +16,28 @@
         // Precisamos da variavel do valor
         // Precisamos da variavel segmento (vestuario, eletronico ou alimenticio)
         // Precisamos da variável desconto
+        let produto = prompt('Usuário informa o nome do produto: ')
+        let valor = parseFloat(prompt('Usuário deve informar o valor do produto: '))
+        let variavel_segmento = prompt('Usuário deve informar o segmento do produto: \n1- Vestuário \n2- Eletrônico \n3- Alimentício')
 
+        let desconto = 0
 
+        if (variavel_segmento === "1") {
+            desconto = valor * 0.05 
+        } else if (variavel_segmento === "2") {
+            desconto = valor * 0.08
+        } else if (variavel_segmento === "3") {
+            desconto = valor * 0.10
+        }
+        
+        let valor_desconto = valor - desconto
 
+        alert('Nome do produto: ' + produto)
+        alert('Valor do produto: ' + valor)
+        alert('Desconto: ' + desconto)
+        alert('Valor com desconto ' + valor_desconto)
+        
+        
         // Verificar com if qual desconto aplicar para qual produto/segmento
             // Se o produto é vestuário - if
                 // Bloco 1 
