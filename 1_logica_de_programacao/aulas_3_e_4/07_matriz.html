@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Matriz (uma lista, com varias listas)
+        // Como se fosse uma tabela
+        let lista = [
+            [1, 2, 3,],
+            [2, 3, 45],
+            [3, 89, 78],
+            [4, 4, 6],
+            [5, 8, 9]    
+        ]
+        // Acessando as sublistas da lista com o primeiro for
+        // Acessando os itens da sublista com o segundo for
+        for (let linha = 0; linha < lista.length; i++) {
+            for (let coluna = 0; coluna <= lista[linha].length; coluna++) {
+                alert('Linha ' + linha + ' coluna ' + coluna + ' tem item ' + lista[linha][coluna])
+            }
+        }
+        // Mostrando um item especifico
+        // Dentro da lista
+        alert(lista[2][2])
+    </script>
+</body>
+</html>

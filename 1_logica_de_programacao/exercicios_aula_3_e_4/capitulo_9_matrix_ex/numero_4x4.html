@@ -8,6 +8,39 @@
 <body>
     <script>
 
+        // c - Crie uma matriz 4x4 e peça para o usuário 
+        //informar 16 números. Quando informados
+        // os 16 números, exiba cada um deles, 
+        //além da soma e a média dos valores.
+            
+        let matriz = []
+        let contador_linha = 0
+        
+        
+        // For para as linhas
+        for (let i = 0; i < 4; i++) {
+            // Sublista para armazenar subslistas com 4 valores
+            // na matriz principal
+            let sublista = []
+
+
+            // for para as colunas
+            for (let j = 0; j < 4; j++) {
+                // Pedir os numeros com prompt
+                let numero = prompt('Informe o valor para linha ' + i + ' coluna ' + j + ':')
+                sublista.push(numero)           
+            }
+            matriz.push(sublista)
+        }
+
+        for (let i = 0; i < 4; i++) {
+            for (let j =0; j < 4; j++) {
+                alert('Linha ' + i + ' Coluna ' + j + ' item = ' + matriz[i][j])
+            }
+        }
+
+    
+        
         
     </script>
 </body>
