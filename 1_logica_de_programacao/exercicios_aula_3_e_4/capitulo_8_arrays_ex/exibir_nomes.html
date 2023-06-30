@@ -18,26 +18,24 @@
                     // a palavra sair
                     
                     let nome = ''
-                    let lista_de_nomes = ['Rodrigo' , 'Felipe' , 'Daniel' , 'Fernando']
+                    let array_nome = []
 
                     while (nome !== 'sair') {
                         nome = prompt('Digite um nome ou digite sair: ')
 
                         if (nome !== 'sair') {
-                            lista_de_nomes.push(nome) 
-                        } else {
-                            break
-                        }
+                            array_nome.push(nome) 
+                        } 
                     }
                                                
                     
                         console.log('Nomes cadastrados: ')
-                    for (let i = 0; i < lista_de_nomes.length; i++) {
-                        console.log(lista_de_nomes[i])
+                    for (let i = 0; i < array_nome.length; i++) {
+                        console.log(array_nome[i])
                     }
                     
 
-                    console.log('Quantidade de nomes cadastrados: ' + lista_de_nomes.length)
+                    console.log('Quantidade de nomes cadastrados: ' + array_nome.length)
 
                     
                     // apos o loop parar, informe a quantidade de 
