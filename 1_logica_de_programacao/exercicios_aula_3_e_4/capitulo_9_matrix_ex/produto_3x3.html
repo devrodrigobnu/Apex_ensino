@@ -14,17 +14,33 @@
         // assim que desenvolver a matriz, exiba os dados utilizando laços de repetição.
 
         let matriz = [
-            ['Camiseta' , 'Nike' , 99],
-            ['Bermuda' , 'Adidas' , 87],
-            ['Casaco' , 'Dafiti' , 45]
+            ['Camiseta' , 'Nike' , 'R$ ' + 99],
+            ['Bermuda' , 'Adidas' , 'R$ ' + 87],
+            ['Casaco' , 'Dafiti' , 'R$ ' + 45]
         ]
 
         console.log('Dados da matriz: ')
         for (let i = 0; i < matriz.length; i++) {
+                console.log('---');           
             for (let j = 0; j < matriz.length; j++) {
                 console.log(matriz[i][j]);
             }
+            switch (i) {
+                
+                case 0:
+                    console.log('Camiseta: ')
+                    break;
+                case 1:
+                    console.log('Bermuda: ')
+                    break;
+                case 2:
+                    console.log('Casaco: ')  
+                    break;             
+
+            }
+
         }
+
        
         
     </script>
