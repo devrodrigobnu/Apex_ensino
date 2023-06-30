@@ -18,19 +18,25 @@
                     // a palavra sair
                     
                     let nome = ''
-                    let lista_nomes = []
+                    let lista_nomes = ['Rodrigo ', 'Felipe ', 'Daniel ', 'Fernando']
+                    
 
                     while (nome != 'sair') {
+                        nome = prompt('Digite um nome ou digite sair para: sair! ')
+                        if (nome !== 'sair') {
+                            lista_nomes.push(nome)
+                        } else {
+                            break
+                        }
+                    
+                    for(let i = 0; i < lista_nomes.length; i++)
+                        console.log(lista_nomes[1])
+                    
+                    alert('Nomes cadastrados: ' + nome);  
+                    
                         
-                            // usar o prompt para pedir o nome
-
-                            // Verificar se o usario informou sair
-                            // se informou sair:
-                                // vamos parar o programa
-
-                            // se não
-                                // usar o push para colocar o nome na lista
                     }
+
                     
                     // apos o loop parar, informe a quantidade de 
                     // nomes que foram informados   
