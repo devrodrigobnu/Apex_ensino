@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //     Leia dois números do usuário, verifique se os números são positivos, se forem printe a soma, a subtração
+    //    a divisão, e a multiplicação dos dois números. Caso o número seja negativo, printe
+    //    uma mensagem de aviso.
+
+        // Ler dois números do usuário
+        let numero_1 = parseInt(prompt('Digite um número: '))
+        let numero_2 = parseInt(prompt('Digite outro número: '))
+
+        // Verificar se os números são positivos, se forem printe a soma
+
+        if (numero_1 > 0 && numero_2 > 0) {
+    
+        var subtracao = numero_1 - numero_2;
+        var divisao = numero_1 / numero_2;
+        var multiplicacao = numero_1 * numero_2;
+        var soma = numero_1 + numero_2;
+        
+    
+        console.log('A soma é: ' + soma)
+        console.log('A divisão é: ' + divisao)
+        console.log('A multiplicação é: ' + multiplicacao)
+        console.log('A subtração é: ' + subtracao)
+
+        } else {
+            console.log('O resultado não pode ser negativo! ')
+        }
+
+
+    </script>
+</body>
+</html>
