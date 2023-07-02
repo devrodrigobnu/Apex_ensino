@@ -15,8 +15,22 @@
     // Idoso: 65+ 
     // printar => usuário X pertence a categoria Y. (Exemplo)
         
-    
-    
+        let nome = prompt('Digite o seu nome: ');
+        let idade = parseInt(prompt('Digite sua idade: '));
+        let categoria = verificarCategoria(idade);
+
+        function verificarCategoria(idade) {
+            if (idade >= 0 && idade <= 12) {
+                return 'Criança'
+            } else if (idade >= 13 && idade <= 19) {
+                return 'Adolescente'
+            } else if (idade >= 20 && idade <= 64) {
+                return 'Adulto' 
+            } else 
+                return 'Idoso'
+        }
+        
+        alert('O usuário ' + nome + ' pertence a categoria ' + categoria + '.')
 
     
         
