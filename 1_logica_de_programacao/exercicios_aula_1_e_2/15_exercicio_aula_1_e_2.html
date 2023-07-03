@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Leia um ano informado pelo usuário e printe se o ano é bisexto ou não.
+        // OBS: 
+        // Um ano bisexto é divisível por 4, mas não por 100! 
+        // Um ano bisexto é divisível por 100 e por 400!    
+
+        let ano = parseInt(prompt('Informe um ano no formato YYYY: '))
+        
+        if ((ano % 4 === 0 && ano % 100 !== 0) || ano % 400 === 0) {
+            alert('O ano é bisexto! ')
+        } else {
+            alert('O ano não é bisexto! ')
+        }
+
+
+
+    </script>
+</body>
+</html>

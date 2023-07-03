@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Verifique se uma data é válida com base no dia, mês e ano informados separadamente.	
+
+        let dia = parseInt(prompt('Digite uma data no formato DD: '))
+        let mes = parseInt(prompt('Digite um mês no formato MM: '))
+        let ano = parseInt(prompt('Digite um ano no formato YYYY: '))
+
+        if (dia >= 1 && dia <= 31 && mes >= 1 && mes <= 12 && ano >= 0) {
+            alert('A data ' + dia + '/' + mes + '/' + ano + ' é válida! ')
+        } else {
+            alert('A data informada é inválida!')
+        }
+
+
+    </script>
+</body>
+</html>
