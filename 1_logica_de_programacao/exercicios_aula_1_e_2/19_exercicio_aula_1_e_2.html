@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // Crie um programa que leia o dia da semana em número e printe o dia da semana por extenso que corresponde ao número informado.
+    // Informe uma mensagem de aviso caso o número não seja válido.
+
+    let numero_dia = parseInt(prompt('Digite o número do dia da semana: '))
+    let dia_da_semana;
+
+    switch (numero_dia) {
+        case 1:
+            dia_da_semana = 'Domingo';
+                break;
+        case 2:
+            dia_da_semana = 'Segunda-feira';
+                break;
+        case 3: 
+            dia_da_semana = 'Terça-feira';
+                break;
+        case 4: 
+            dia_da_semana = 'Quarta-feira';
+                break;
+        case 5: 
+            dia_da_semana = 'Quinta-feira';
+                break;
+        case 6:
+            dia_da_semana = 'Sexta-feira';
+                break;
+        case 7: 
+            dia_da_semana = 'Sábado'
+                break;
+    }
+    
+    if (numero_dia >= 1 && numero_dia <= 7) {
+        alert('O número ' + numero_dia + ' corresponde ao dia ' + dia_da_semana)
+    } else {
+        alert('O número ' + numero_dia + ' não corresponde a nenhum dia da semana' )
+    }
+
+    </script>
+</body>
+</html>
