@@ -7,8 +7,20 @@
 </head>
 <body>
     <script>
+        // O usuário irá informar um número, em seguida realizar a tabuada daquele
+        // número.
+        let numero = parseInt(prompt('Digite um número para a tabuada'))
 
-        
+       
+        if (isNaN(numero)) {
+            alert('Digite um número válido! ')
+        } else {
+            for (let i = 1; i <= 10; i++) {
+                console.log('O número informado ' + numero + ' x ' + i + ' = ' + numero * i ) 
+            }
+        }
+
+
     </script>
 </body>
 </html>

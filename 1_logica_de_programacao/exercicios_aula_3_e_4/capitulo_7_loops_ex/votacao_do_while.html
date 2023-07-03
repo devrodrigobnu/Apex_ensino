@@ -7,8 +7,54 @@
 </head>
 <body>
     <script>
+        // Crie um pequeno sistema de votação, exiba em um prompt() as opções:
+        // 1 - Alessandra
+        // 2 - Caio
+        // 3 - Geraldo
+        // 4 - Talita
+        // 5 - Sair
+    
+        // Enquanto não for digitado o número 5 o laço deverá realizar a ação de
+        // prompt() para pedir o voto e contabilizar para o candidato. Quando
+        // informado o número 5 retorne a quantidade de votos que cada candidato
+        // obteve.
 
-        
+        let alessandra = 0
+        let caio = 0
+        let geraldo = 0
+        let talita = 0
+    
+
+        let prompt_menu = 'Candidatos '
+        prompt_menu += '\n1 - Alessandra ' 
+        prompt_menu += '\n2 - Caio ' 
+        prompt_menu += '\n3 - Geraldo ' 
+        prompt_menu += '\n4 - Talita '
+        prompt_menu += '\n5 - Digite "5" para sair.'
+        while (true) {
+            let voto = prompt(prompt_menu)
+            if (voto == 1) {
+                alessandra++
+            } else if (voto == 2) {
+                caio++
+            } else if (voto == 3) {
+                geraldo++
+            } else if (voto == 4) {
+                talita++
+            } else if (voto == '5') {
+                break
+            } 
+
+        }
+
+        console.log('Resultado da votação: ')
+        console.log('1) - Alessandra recebeu ' + alessandra + ' votos ')
+        console.log('2) - Caio recebeu ' + caio + ' votos ')
+        console.log('3) - Geraldo recebeu ' + geraldo + ' votos ')
+        console.log('4) - Talita recebeu ' + talita + ' votos ')
+
+
+
     </script>
 </body>
 </html>
