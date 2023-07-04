@@ -9,31 +9,22 @@
     <script>
     // Calcular a soma dos números pares em um intervalo (USAR IF, WHILE E FUNCTION)
 
-    
-    // Criar a funcao que realizará a soma dos numeros no intervalos
-        function soma_numero() {
-            // Variavel para soma
-            // Variavel para o contador do while
-
-            // Usar o while e um contador para passar por todos os 
-            // números entre o numeros inicial
-            // e o numero final passados pelo usuário 
-            while () {
+        function soma_pares_em_intervalo(numero_inicio, numero_final) {
+            let soma_dos_pares = 0
+            let contador = numero_inicio
+            
+            while (contador <= numero_final) {
+                contador++
 
             }
-
-            // Incrementar nosso contador
+            return soma_dos_pares
         }
     
+        let numero_inicio = parseInt(prompt('informe o número inicial: '))
+        let numero_final = parseInt(prompt('informe o número final: '))
+        let resultado = soma_pares_em_intervalo(numero_inicio, numero_final)
+        alert('A soma dos pares é: ' + resultado)
     
-    // Ler os dados, colocando os mesmos em variaveis
-    // e passando eles via parâmetros para a função
-
-
-   
-   
-    // Mostrar o resultado para o usuário
-
 
     </script>
 </body>
