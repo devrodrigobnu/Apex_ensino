@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <div id="divisao_1" class="animated-element-left"> 
+        <!-- Escrevendo cabecários -->
+        <h1>Documentação</h1>
+        <h2>Usando onclick do JS</h2>
+        <br>
+        <!-- Escrevendo parágrafos -->
+        <p1>O evento onclick chama a nossa função em JS dentro das tags script.</p1>
+        <br>
+        <p1>Isso ocorre quando o usuário clicar no botão!</p1>
+        <br>
+        
+        <!-- Escrevendo parágrafos maiores! -->
+        <br>
+        <p3>Quando você usa innerHTML em um elemento HTML</p3>
+        <br>
+        <p4>Você pode obter o conteúdo HTML dentro desse elemento na página</p4>
+        <br>
+        <p5>Aqui está um exemplo básico de como usar innerHTML com JS.</p5>
+        <br>
+        <p6>Código fonte:</p6>
+        <br>
+    </div>
+
+    <div id="divisao_2" class="animated-element-right">
+        <!-- usando tags style para aplicar estilo as tags HTML através do CSS -->
+        <!-- padding = server para adicionar espaço entre os itens  -->
+        <!-- px = pixels -->
+        <p5 style="color: green; margin-top:10%; padding-left: 10%">function</p5> 
+        <p5 style="padding-left: 1px; color: blue;">my_function() </p5> {
+        <br>
+
+        <p5 style="margin-top:10%; padding-left: 20%">document.</p5> 
+        <p5 style="color: purple;">getElementById</p5> <p5>("elemento_id")</p5> 
+        <p5">.innerHTML = </p5> 
+        <p5 style="color: yellow; padding: 1px;">"Hello"</p5>
+        <br>
+        
+        <p5 style="margin-top:10%; padding-left: 10%">}</p5>
+        <br>
+
+        <button onclick="hello_world()" id="botao_demonstracao">Click me</button>
+        <button onclick="refresh_tela()" id="botao_demonstracao_2">Refresh</button>
+    </div>
+
+    <script>
+        function hello_world() {
+            document.getElementById('botao_demonstracao').innerHTML = "CLICKED"
+        }
+
+        function refresh_tela() {
+            location.reload()
+        }
+
+
+
+
+    </script>
+ 
+ 
+ 
+ 
+ 
+    <!-- na tag style, nós escrevemos códigos em css -->
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        
+        #divisao_1 {
+            display: grid;
+            place-items: center;
+        }
+            
+        #divisao_2 {
+            padding-left: 20%
+        }
+
+        #botao_demonstracao {
+            border-radius: 3%;
+            border-color: white;
+            margin-top: 1%;
+            background-color: lightblue;
+            color: blue;
+            margin-left: 200px;
+            display: grid;
+            place-items: center;
+        }
+        #botao_demonstracao_2 {
+            border-radius: 3%;
+            border-color: white;
+            margin-top: 1%;
+            background-color: lightblue;
+            color: blue;
+            margin-left: 200px;
+            display: grid;
+            place-items: center;
+        }
+
+        #botao_demonstracao:hover {
+            scale: 1.2
+        }
+
+        #botao_demonstracao_2:hover {
+            scale: 1.2
+        }
+
+        @keyframes slideInFromRight {
+            0% {
+                transform: translateX(100%)
+            }
+            100% {
+                transform: translateX(0)
+            }
+        
+        }
+        @keyframes slideInFromLeft {
+            0% {
+                transform: translateX(-100%)
+            }
+            100% {
+                transform: translateX(0)
+            }
+        
+        }
+
+        .animated-element-left {
+            animation: slideInFromLeft 1s ease-in;
+        }
+
+        .animated-element-right {
+            animation: slideInFromRight 1s ease-in;
+        }
+
+    </style>
+
+
+
+
+
+
+</body>
+</html>

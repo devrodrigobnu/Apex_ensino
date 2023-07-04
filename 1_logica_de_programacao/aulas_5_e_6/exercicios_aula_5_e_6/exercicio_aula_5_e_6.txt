@@ -1,0 +1,3 @@
+Exercicio 1 - Verificar se um número é primo (usar IF, FOR e FUNCTION)
+Exercicio 2 - Contas quantas vezes uma letra aparece em uma string (usar IF, FOR, FUNCTION)
+Exercicio 3 - Calcular a soma dos números pares em um intervalo (USAR IF, WHILE E FUNCTION)
