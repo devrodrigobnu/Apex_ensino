@@ -15,12 +15,30 @@
     // que 100 reais, 10% de desconto.
     // Se o valor for menor que 50 reais, 3% de desconto.
 
-        let produtos = ['\nProduto 1: Camiseta - R$45', '\nProduto 2: Bermuda - R$30', '\nProduto 3: Tênis - R$250', '\nProduto 4: Bola - R$25', '\nProduto 5: Casaco - R$350']
-            for (let i = 0; i < produtos.length; i++) {
-                alert(produtos[i])
+        function calcular_desconto(valor) {
+            if (valor > 100) {
+                return valor * 0.8; // 20% de desconto
+            } else if (valor > 50) {
+                return valor * 0.90; // 10% de desconto
+            } else {
+                return valor * 0.97; // 3% de desconto
             }
+        }
        
+        var produtos = []
+
+        for (var i = 0; i < 5; i++) {
+            var nome = prompt('Digite o nome do produto ' + (i+1) + ':')
+            var preco = parseFloat(prompt('Digite o preço do produto ' + (i+1) + ':'))
+            
+            var preco_com_desconto = calcular_desconto(preco)
+
+            produtos.push({ nome: nome, preco: preco_com_desconto })
+        }
        
+        for (var i = 0; i < produtos.length; i++) {
+            console.log('Produto: ' + produtos[i].nome + ' - valor com desconto: R$' + produtos[i].preco.toFixed(2))
+        }
            
 
     </script>
