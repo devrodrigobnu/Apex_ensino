@@ -10,12 +10,14 @@
     // Calcular a soma dos números pares em um intervalo (USAR IF, WHILE E FUNCTION)
 
         function soma_pares_em_intervalo(numero_inicio, numero_final) {
-            let soma_dos_pares = 0
-            let contador = numero_inicio
+            let soma_dos_pares = 0;
+            let contador = numero_inicio;
             
             while (contador <= numero_final) {
+                if (contador % 2 === 0) {
+                    soma_dos_pares += contador;
+                }
                 contador++
-
             }
             return soma_dos_pares
         }
