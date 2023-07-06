@@ -7,25 +7,41 @@
 </head>
 <body>
     <script>
-    // Calcular a soma dos números pares em um intervalo (USAR IF, WHILE E FUNCTION)
+        // Calcular a soma dos números pares em um intervalo (USAR IF, WHILE E FUNCTION)
 
-        function soma_pares_em_intervalo(numero_inicio, numero_final) {
-            let soma_dos_pares = 0;
-            let contador = numero_inicio;
+        // Declarar função soma dos pares
+
+        function soma_dos_pares (numero_inicial, numero_final) {
+            let soma_dos_pares = 0
+            let contador = numero_inicial
             
+            // Percorrendo todos os números do numero inicial e final 
+            // e está incrementando soma_dos_pares.
+
             while (contador <= numero_final) {
-                if (contador % 2 === 0) {
-                    soma_dos_pares += contador;
+                contador++    
+                if (contador % 2 ==0) {
+                    soma_dos_pares += contador
                 }
-                contador++
-            }
-            return soma_dos_pares
+
         }
-    
-        let numero_inicio = parseInt(prompt('informe o número inicial: '))
-        let numero_final = parseInt(prompt('informe o número final: '))
-        let resultado = soma_pares_em_intervalo(numero_inicio, numero_final)
-        alert('A soma dos pares é: ' + resultado)
+        return soma_dos_pares
+        
+        
+    }
+        // Ler dados do usuário
+
+        let numero_inicial = parseInt(prompt('Digite o número inicial: '))
+        let numero_final = parseInt(prompt('Digite o número final: '))
+        
+        // Mostrar dados para o usuário
+
+        console.log('A soma dos pares é ' + soma_dos_pares (numero_inicial, numero_final))
+        
+
+
+        
+
     
 
     </script>

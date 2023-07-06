@@ -7,30 +7,21 @@
 </head>
 <body>
     <script>
-        // O usuário informa um número inicial e um número final, em seguida retorne a
-        // quantidade de pares e ímpares daquela cadeia de valores.
-        // Vamos supor que os números informados foram: 6 e 12, sendo assim serão 4
-        // pares (6, 8, 10 e 12) e 3 ímpares (7, 9 e 11).
+        // O usuário irá informar um número, em seguida realizar a tabuada daquele
+        // número.
 
-        let numero_inicial = parseInt(prompt('Digite um número inicial: '))
-        let numero_final = parseInt(prompt('Digite um número final: '))
-        let impares = 0
-        let pares = 0
+        let numero = parseInt(prompt('Digite um número para a tabuada'))
+
+       
+        if (isNaN(numero)) {
+            alert('Digite um número válido! ')
+        } else {
+            for (let i = 1; i <= 10; i++) {
+            console.log('O número informado ' + numero + ' x ' + i + ' = ' + numero * i ) 
+    }
+}
 
         
-        for (let i = numero_inicial; i <= numero_final; i++) {
-            if (i % 2 == 0) {
-                pares++
-            } else {
-                impares++
-            }
-            
-        } 
-        console.log('A quantidade de pares é: ' + pares)
-        console.log('A quantidade de numeros impares é: ' + impares)
-
-
-
 
 
 

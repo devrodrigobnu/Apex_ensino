@@ -77,9 +77,23 @@
    
    
    
-        // for (let i = 1; i <= 7; i++) {
-        //     console.log(verificar_dia_semana(i))
-        // }
+        function soma_pares_em_intervalo(numero_inicio, numero_final) {
+            let soma_dos_pares = 0;
+            let contador = numero_inicio;
+            
+            while (contador <= numero_final) {
+                if (contador % 2 === 0) {
+                    soma_dos_pares += contador;
+                }
+                contador++
+            }
+            return soma_dos_pares
+        }
+    
+        let numero_inicio = parseInt(prompt('informe o número inicial: '))
+        let numero_final = parseInt(prompt('informe o número final: '))
+        let resultado = soma_pares_em_intervalo(numero_inicio, numero_final)
+        alert('A soma dos pares é: ' + resultado)
 
 
         // Percorrer todas as notas da lista e retornar a media dos alunos

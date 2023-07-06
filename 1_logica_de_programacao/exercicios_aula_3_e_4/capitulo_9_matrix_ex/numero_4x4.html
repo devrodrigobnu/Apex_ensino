@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=[device-width], initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
             
         let matriz = []
         let contador_linha = 0
-        
+        let soma_dos_numeros = 0
         
         // For para as linhas
         for (let i = 0; i < 4; i++) {
@@ -28,6 +28,8 @@
             for (let j = 0; j < 4; j++) {
                 // Pedir os numeros com prompt
                 let numero = prompt('Informe o valor para linha ' + i + ' coluna ' + j + ':')
+                soma_dos_numeros = soma_dos_numeros + j
+                contador_linha++
                 sublista.push(numero)           
             }
             matriz.push(sublista)
@@ -35,11 +37,12 @@
 
         for (let i = 0; i < 4; i++) {
             for (let j =0; j < 4; j++) {
-                alert('Linha ' + i + ' Coluna ' + j + ' item = ' + matriz[i][j])
+                console.log('Linha ' + i + ' Coluna ' + j + ' item = ' + matriz[i][j])
             }
         }
 
-    
+        console.log('A soma dos valores é ' + soma_dos_numeros)
+        console.log('A média dos valores é: ' + (soma_dos_numeros / contador_linha))
         
         
     </script>
